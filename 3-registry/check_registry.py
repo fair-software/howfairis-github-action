@@ -1,9 +1,3 @@
-import yaml
-
-with open("/data/registries.yml") as opened_file:
-    registries = yaml.safe_load(opened_file)
-
-
 def has_programming_badge(readme_file):
     with open(readme_file) as text:
         for line in text:
@@ -27,4 +21,8 @@ def main():
 
 
 if __name__ == "__main__":
+    import yaml
+
+    with open("/data/registries.yml") as opened_file:
+        registries = yaml.safe_load(opened_file)
     main()
