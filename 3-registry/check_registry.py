@@ -1,16 +1,29 @@
-import os
+import yaml
 
-def has_pypi_badge(readme_file):
+with open("registries.yml") as opened_file:
+    registries = yaml.safe_load(opened_file)
+
+
+def has_programming_badge(readme_file):
     with open(readme_file) as text:
         for line in text:
-            if 'PyPi' in line or 'pypi' in line:
-                return "PyPi is found"
+            if registries["by_language"]["pypi"] in line:
+                return "PyPi badge is found"
+
+            if registries["by_language"]["julia"] in line:
+                return "Julia badge is found"
+
+            if registries["by_language"]["ropensci"] in line:
+                return "ROpenSci badge is found"
+
+            if registries["by_language"]["cran"] in line:
+                return "CRAN badge is found"
 
     return "No registry found"
 
 
 def main():
-    print(has_pypi_badge("README.md"))
+    print(has_programming_badge("README.md"))
 
 
 if __name__ == "__main__":
