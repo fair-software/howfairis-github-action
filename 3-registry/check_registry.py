@@ -1,9 +1,9 @@
 def has_programming_badge(readme_file):
-    with open(readme_file) as text:
-        for line in text:
-            for lang, badge in registries["by_language"].items():
-                if badge in line:
-                    return lang + " badge found"
+    with open(readme_file, "r") as text:
+        text = text.read()
+        for lang, badge in registries["by_language"].items():
+            if badge in text:
+                return lang + " badge found"
 
     return "No registry found"
 
