@@ -1,6 +1,6 @@
 import yaml
 
-with open("registries.yml") as opened_file:
+with open("/data/registries.yml") as opened_file:
     registries = yaml.safe_load(opened_file)
 
 
