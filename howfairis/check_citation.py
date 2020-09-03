@@ -18,8 +18,8 @@ def YAML_check(filename):
 			citation = yaml.safe_load(file)
 			return "YAML file loaded"
 		except yaml.YAMLError as exc:
-				print(exc)
-				return "YAML failed to load"
+			print(exc)
+			return "YAML failed to load"
 
 
 
