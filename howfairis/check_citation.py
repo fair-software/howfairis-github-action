@@ -8,17 +8,17 @@ def file_check(filename):
 	if path.isfile(filename):
 		print ("File " +  filename + " found")
 		return "File Found"
-	else: 
+	else:
 		print("File " + filename + " not found")
 		return "File Not Found"
 
 def YAML_check(filename):
     with open(filename) as file:
-	try:
-		citation = yaml.safe_load(file)
-		return "YAML file loaded"
-	except yaml.YAMLError as exc:
-        	print(exc)
+		try:
+			citation = yaml.safe_load(file)
+			return "YAML file loaded"
+		except yaml.YAMLError as exc:
+				print(exc)
 		return "YAML failed to load"
 
 
@@ -39,7 +39,7 @@ def Contents_check(filename):
 	try:
 		s(citation)
 		print("Passed")
-		return "Citation Scheme passed"	
+		return "Citation Scheme passed"
 	except	 MultipleInvalid as e:
 		exc = e
 		print ("Error: " + str(exc))
@@ -61,4 +61,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
