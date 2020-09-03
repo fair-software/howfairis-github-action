@@ -1,6 +1,9 @@
-comment: This file somehow gets magically generated from https://github.com/NLeSC/awesome-research-software-registries
-known-registries:
-  byLanguage:
-    - https://npmjs.com
-    - https://pkg.julialang.org/docs/
-    - https://pypi.org
+by_language:
+  pypi :
+    'https://badge.fury.io/py/'
+  julia :
+    'http://pkg.julialang.org/badges/'
+  cran:
+    'https://www.r-pkg.org/badges/version/'
+  ropensci:
+    'https://badges.ropensci.org/'
