@@ -9,13 +9,14 @@ def has_programming_badge(readme_file):
 
 
 def main():
-    import yaml
 
-    with open("registries.yaml") as opened_file:
-        registries = yaml.safe_load(opened_file)
-        
     print(has_programming_badge("README.md"))
 
 
 if __name__ == "__main__":
+    import yaml
+
+    with open("registries.yaml") as opened_file:
+        registries = yaml.safe_load(opened_file)
+
     main()
