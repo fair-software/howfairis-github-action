@@ -4,6 +4,6 @@ RUN apk add git
 
 WORKDIR /data
 
-RUN pip install git+https://github.com/fair-software/badge@url
+RUN pip install git+https://github.com/fair-software/howfairis
 
 ENTRYPOINT ["howfairis"]

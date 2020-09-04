@@ -38,25 +38,6 @@ Running the dockerized howfair is locally:
 docker run -ti howfairis https://github.com/owner/repo
 ```
 
-Non-dockerized howfairis:
-
-```shell
-# Create a virtualenv, e.g. with
-python3 -m virtualenv venv3
-
-# activate virtualenv
-source venv3/bin/activate
-
-# (from the project root directory)
-# install howfairis as an editable package
-pip install --editable .
-
-# You should now have a command line utility 
-# 'howfairis' (whenever you are in the virtualenv):
-howfairis https://github.com/owner/repo
-
-```
-
 # badge
 
 This badge describes and visualises the compliance with FAIR Sofatware
