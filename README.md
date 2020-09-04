@@ -1,6 +1,4 @@
-# howfairis
-
-_GitHub action to assess compliance with fair-software.eu_
+# GitHub action to assess compliance with fair-software.eu
 
 To enable this checker, add the following snippet as ``.github/workflows/fair-software.yml`` in your GitHub repository.
 
