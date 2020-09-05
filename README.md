@@ -12,9 +12,6 @@ jobs:
     name: "fair-software"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        name: Check out a copy of your repository
-
       - uses: fair-software/badge@master
         name: Measure compliance with fair-software.eu recommendations
         with:
