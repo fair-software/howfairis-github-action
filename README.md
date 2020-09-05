@@ -29,7 +29,7 @@ Building the docker image:
 docker build -t howfairis .
 ```
 
-Running the dockerized howfair is locally:
+Running the dockerized ``howfairis`` locally:
 
 ```shell
 # (from project root directory)
