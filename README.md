@@ -14,6 +14,8 @@ jobs:
     steps:
       - uses: fair-software/badge@master
         name: Measure compliance with fair-software.eu recommendations
+        env:
+          PYCHARM_HOSTED: "Trick colorama into displaying colored output" 
         with:
           MY_REPO_URL: "https://github.com/${{ github.repository }}"
 ```
