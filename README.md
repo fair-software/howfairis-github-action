@@ -79,7 +79,7 @@ on. You can find more information about the recommendations on [fair-software.eu
 
 ![](https://img.shields.io/badge/fair--software.eu-%E2%97%8B%20%E2%97%8B%20%E2%97%8F%20%E2%97%8B%20%E2%97%8B-red)
 
-This badge's red color means that the repository complies with 0 or 1 recommendations. The state of third circle
+This badge's red color means that the repository complies with 0 or 1 recommendations. The state of the third circle
 indicates the software has been registered in a community registry.
 
 ![](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%E2%97%8B%20%E2%97%8F%20%E2%97%8F%20%E2%97%8B-orange)
