@@ -35,7 +35,7 @@ Running the dockerized ``howfairis`` locally:
 docker run -ti howfairis https://github.com/owner/repo
 ```
 
-# FAIR badges explained
+## FAIR badges explained
 
 This GitHub action will suggest a badge visualizing compliance with the FAIR Software
 recommendations as described on [fair-software.eu](https://fair-software.eu/).
@@ -44,7 +44,7 @@ The [Netherlands eScience Center](https://www.esciencecenter.nl/) and [DANS](htt
 fair-software.eu with five actionable and practical recommendations that help researchers to make their software more
 FAIR (Findable, Accessible, Interoperable, Reusable).
 
-## What do we mean by compliance
+### What do we mean by compliance
 
 The GitHub Action does checks on the repository it runs on, and rates the repository according to these 5 aspects:
 
@@ -66,7 +66,7 @@ researchers who develop software to implement these Five recommendations for FAI
 compliance with the [fair-software.eu](https://fair-software.eu) recommendations more visible to the rest of the world.
 We also want to promote the recommendations to a wider audience.
 
-## How to interpret FAIR badges?
+### How to interpret FAIR badges?
 
 A FAIR badge looks like this:
 
@@ -79,7 +79,7 @@ Each circle represents one of the recommendations, meaning the first symbol repr
 publicly accessible repository with version control_, the second symbol represents the second recommendations, and so
 on. You can find more information about the recommendations on [fair-software.eu](https://fair-software.eu/).
 
-### Here are some examples:
+#### Here are some examples:
 
 ![](https://img.shields.io/badge/fair--software.eu-%E2%97%8B%20%E2%97%8B%20%E2%97%8F%20%E2%97%8B%20%E2%97%8B-red)
 
