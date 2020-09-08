@@ -68,10 +68,6 @@ We also want to promote the recommendations to a wider audience.
 
 ### How to interpret FAIR badges?
 
-A FAIR badge looks like this:
-
-![](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%E2%97%8B%20%E2%97%8F%20%E2%97%8F%20%E2%97%8B-orange)
-
 The color of the badge depends on the level of compliance; the pattern of filled and empty circles will vary depending
 what aspects the software complies with.
 
