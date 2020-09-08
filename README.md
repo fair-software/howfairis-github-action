@@ -84,9 +84,9 @@ indicates the software has been registered in a community registry.
 
 ![](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%E2%97%8B%20%E2%97%8F%20%E2%97%8F%20%E2%97%8B-orange)
 
-The repository with this badge complies with 3 out of 5 recommendations. It is a publicly accessible repository with
-version control. It has been registered in a community registry,  and it contains citation information. There is no
-license in this repository, and the project does not use a checklist.
+The repository with this badge complies with 3 out of 5 recommendations, hence its color is orange. It is a publicly
+accessible repository with version control. It has been registered in a community registry, and it contains citation
+information. There is no license in this repository, and the project does not use a checklist.
 
 ![](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%E2%97%8F%20%E2%97%8F%20%E2%97%8F%20%E2%97%8B-yellow)
 
