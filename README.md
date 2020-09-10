@@ -1,4 +1,4 @@
-# GitHub action to assess compliance with fair-software.eu
+# Assess compliance with fair-software.eu
 
 To enable this checker, add the following snippet as ``.github/workflows/fair-software.yml`` in your GitHub repository.
 
@@ -18,21 +18,6 @@ jobs:
           PYCHARM_HOSTED: "Trick colorama into displaying colored output" 
         with:
           MY_REPO_URL: "https://github.com/${{ github.repository }}"
-```
-
-
-Building the docker image:
-
-```shell
-# (from project root directory)
-docker build -t howfairis .
-```
-
-Running the dockerized ``howfairis`` locally:
-
-```shell
-# (from project root directory)
-docker run -ti howfairis https://github.com/owner/repo
 ```
 
 ## FAIR badges explained
@@ -95,3 +80,21 @@ A yellow badge means the repository complies with 4 recommendations.
 ![](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%E2%97%8F%20%E2%97%8F%20%E2%97%8F%20%E2%97%8F-green)
 
 A green badge means the repository complies with all 5 recommendations.
+
+## For developers
+
+Building the docker image:
+
+```shell
+# (from project root directory)
+docker build -t howfairis .
+```
+
+Running the dockerized ``howfairis`` locally:
+
+```shell
+# (from project root directory)
+docker run -ti howfairis https://github.com/owner/repo
+```
+
+
