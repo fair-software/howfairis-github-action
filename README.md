@@ -93,8 +93,19 @@ docker build -t howfairis .
 Running the dockerized ``howfairis`` locally:
 
 ```shell
-# (from project root directory)
-docker run -ti howfairis https://github.com/owner/repo
+# show howfairis'es help
+docker run -ti howfairis --help
 ```
 
+```shell
+# start the analysis for a github repo
+docker run -ti howfairis https://github.com/owner/repo
 
+# start the analysis for a gitlab repo
+docker run -ti howfairis https://gitlab.com/owner/repo
+```
+
+```shell
+# show howfairis'es version
+docker run -ti howfairis --version
+```
