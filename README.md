@@ -12,7 +12,7 @@ jobs:
     name: "fair-software"
     runs-on: ubuntu-latest
     steps:
-      - uses: fair-software/badge@master
+      - uses: fair-software/howfairis-github-action@master
         name: Measure compliance with fair-software.eu recommendations
         env:
           PYCHARM_HOSTED: "Trick colorama into displaying colored output" 
