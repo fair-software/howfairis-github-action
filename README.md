@@ -1,3 +1,5 @@
+[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B-yellow)](https://fair-software.eu)
+
 # Assess compliance with fair-software.eu
 
 To enable this checker, add the following snippet as ``.github/workflows/fair-software.yml`` in your GitHub repository.
