@@ -10,7 +10,11 @@ jobs:
     name: "selftest"
     runs-on: ubuntu-latest
     steps:
-      - uses: ./  # might need a checkout first
+
+      - name: Check out a copy of the repository
+        uses: actions/checkout@v3
+
+      - uses: ./
         name: Measure compliance with fair-software.eu recommendations
         env:
           PYCHARM_HOSTED: "Trick colorama into displaying colored output"
