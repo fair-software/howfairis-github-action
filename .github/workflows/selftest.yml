@@ -1,4 +1,4 @@
-name: fair-software
+name: selftest
 
 on:
   push:
