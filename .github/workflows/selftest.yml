@@ -1,6 +1,9 @@
 name: fair-software
 
-on: push
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   selftest:
