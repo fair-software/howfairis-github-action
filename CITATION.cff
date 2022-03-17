@@ -31,13 +31,13 @@ authors:
     family-names: Holding
     given-names: Andrew
     orcid: "https://orcid.org/0000-0002-8459-7048"
-cff-version: "1.1.0"
+cff-version: "1.2.0"
 keywords: 
   - "GitHub Actions"
   - "FAIR software"
 license: "Apache-2.0"
 message: "If you use this software, please cite it using these metadata."
-repository-code: "https://github.com/fair-software/badge"
-title: badge
-version: "0.1.0"
+repository-code: "https://github.com/fair-software/howfairis-github-action"
+title: howfairis-github-action
+version: "0.3.0"
 ...
