@@ -8,6 +8,6 @@ RUN python3 -m pip install --upgrade pip wheel && \
     python3 -m pip install howfairis
 
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.py
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
