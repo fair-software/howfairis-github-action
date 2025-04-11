@@ -1,5 +1,7 @@
 FROM python:3.12-alpine
 
+ENV PIP_ROOT_USER_ACTION=ignore
+
 RUN apk update && apk add --no-cache build-base
 
 WORKDIR /data
