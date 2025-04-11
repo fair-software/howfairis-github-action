@@ -1,17 +1,26 @@
 ---
+name: howfairis
+description: "Analyze compliance with fair-software.eu recommendations"
 author: "https://github.com/fair-software"
 branding:
   color: purple
   icon: check
-description: "Analyze compliance with fair-software.eu recommendations"
 inputs:
   MY_REPO_URL:
     description: "URL of the GitHub repository for which to run the analysis"
     required: true
-name: fair-software
+  branch:
+    description: Which git branch to use. Also accepts other git references like SHA or tag.
+    required: false
+    default: 'main'
+  json:
+    description: Whether to display the collected results JSON.
+    required: false
+    default: 'false'
 runs:
-  args:
-    - "${{ inputs.MY_REPO_URL }}"
-  entrypoint: howfairis
   image: Dockerfile
   using: docker
+  args:
+    - "${{ inputs.MY_REPO_URL }}"
+    - "${{ inputs.branch }}"
+    - "${{ inputs.json }}"

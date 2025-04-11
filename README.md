@@ -6,7 +6,7 @@
 To enable this checker, add the following snippet as ``.github/workflows/fair-software.yml`` in your GitHub repository.
 
 ```yaml
-name: fair-software
+name: howfairis
 
 on: push
 
@@ -18,9 +18,11 @@ jobs:
       - uses: fair-software/howfairis-github-action@0.2.1
         name: Measure compliance with fair-software.eu recommendations
         env:
-          PYCHARM_HOSTED: "Trick colorama into displaying colored output" 
+          PYCHARM_HOSTED: "Trick colorama into displaying colored output"
         with:
           MY_REPO_URL: "https://github.com/${{ github.repository }}"
+          branch: main
+          json: false
 ```
 
 ## FAIR badges explained

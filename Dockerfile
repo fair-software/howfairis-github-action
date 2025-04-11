@@ -1,14 +1,13 @@
-FROM python:3.9-alpine
+FROM python:3.12-alpine
 
 RUN apk update && apk add --no-cache build-base
 
 WORKDIR /data
 
-RUN python3 -m venv venv            && \
-    source venv/bin/activate        && \
-    pip install --upgrade pip wheel && \
-    pip install howfairis
+RUN python3 -m pip install --upgrade pip wheel && \
+    python3 -m pip install howfairis
 
-ENV PATH=/data/venv/bin:${PATH}
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.py
 
-ENTRYPOINT ["howfairis"]
+ENTRYPOINT ["/entrypoint.sh"]

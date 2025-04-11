@@ -10,7 +10,6 @@ jobs:
     name: "selftest"
     runs-on: ubuntu-latest
     steps:
-
       - name: Check out a copy of the repository
         uses: actions/checkout@v3
 
@@ -20,3 +19,4 @@ jobs:
           PYCHARM_HOSTED: "Trick colorama into displaying colored output"
         with:
           MY_REPO_URL: "https://github.com/${{ github.repository }}"
+          branch: main
